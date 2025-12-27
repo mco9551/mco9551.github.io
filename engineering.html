@@ -3,55 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engineering | Matthieu</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Titre de la Page | Matthieu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
+<header>
     <nav>
         <div class="nav-left">
             <a href="https://github.com/mco9551" target="_blank" class="git-social">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="vertical-align: middle; margin-right: 5px;"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
                 <span>GitHub</span>
             </a>
             <div class="logo">MATTHIEU<span>.</span></div>
         </div>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="engineering.html">Engineering</a></li>
+            <li><a href="index.html" class="highlight">Home</a></li> <li><a href="engineering.html">Engineering</a></li>
             <li><a href="mobility.html">Mobility</a></li>
             <li><a href="engagement.html">Engagement</a></li>
-            <li><a href="hobbies.html">Interests</a></li> <li><a href="ppp.html" class="highlight">PPP</a></li>
+            <li><a href="hobbies.html">Interests</a></li>
+            <li><a href="ppp.html">PPP</a></li>
         </ul>
     </nav>
-</header>
-
+</header>  
     <main class="container">
         <section class="page-header">
             <p class="pre-title">Technical Expertise</p>
             <h1>Engineering Projects</h1>
-            <p class="section-description">
-                Showcasing my technical background in HPC & Big Data.
-            </p>
         </section>
 
-        <section class="projects-grid">
+        <div class="projects-grid">
+            
             <div class="project-card">
-                <div class="project-content">
-                    <span class="tech-tag">C++ / MPI</span>
-                    <h3>Parallel Matrix Multiplication</h3>
-                    <p>Optimization of large-scale computations for high-performance clusters.</p>
-                    <a href="#" class="project-link">View Details →</a>
+                <div class="card-top">
+                    <span class="tech-tag">C / Systems Programming</span>
+                    <h3>Unix Command Interpreter</h3>
+                    <p>Development of a custom shell in C, managing process lifecycles, command pipes, and I/O redirections.</p>
+                </div>
+                <button class="btn-detail" onclick="openModal('modal1')">Project Details</button>
+            </div>
+
+            <div class="project-card">
+                <div class="card-top">
+                    <span class="tech-tag">Java / OOP / personal</span>
+                    <h3>Connect 4 Engine</h3>
+                    <p>A complete object-oriented implementation of the classic Connect 4 game, featuring custom exception handling and a modular AI interface.</p>
+                </div>
+                <button class="btn-detail" onclick="openModal('modal2')">Project Details</button>
+            </div>
+
+
+            <div class="project-card">
+                <div class="card-top">
+                    <span class="tech-tag">MATLAB / Signal Processing / Telecom</span>
+                    <h3>Digital Communication System</h3>
+                    <p>Simulation of a complete digital transmission chain, focusing on Inter-Symbol Interference (ISI) mitigation using ZFE and MMSE equalizers.</p>
+                </div>
+                <button class="btn-detail" onclick="openModal('modal3')">Project Details</button>
+            </div>
+
+        </div> </main>
+
+    <div id="modal1" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        
+        <div class="modal-body">
+            <div class="modal-text">
+                <span class="tech-tag">C / Systems Programming</span>
+                <h2>Unix Command Interpreter (Minishell)</h2>
+                
+                <div class="star-section">
+                    <p><strong>Situation</strong>Core OS project at ENSEEIHT to master process management.</p>
+                    <p><strong>Task</strong>Build a functional shell from scratch supporting IPC and signal handling.</p>
+                    <p><strong>Action</strong>Implemented dynamic process creation using <code>fork</code> and <code>execvp</code>. Managed command pipelines with <code>pipe</code> and <code>dup2</code>. Handled background execution and signals (SIGINT, SIGTSTP).</p>
+                    <p><strong>Result</strong>Successfully supported complex command sequences like <code>ls | grep .c > output.txt</code>.</p>
+                </div>
+
+                <div class="file-links">
+                    <a href="SystemeExploitationProjet.pdf" target="_blank" class="file-btn">
+                        <div class="file-info">
+                            <span class="file-name">Technical Report</span>
+                            <span class="file-meta">Full project documentation (.pdf)</span>
+                        </div>
+                    </a>
+                    
+                    <a href="minishell.c" target="_blank" class="file-btn">
+                        <div class="file-info">
+                            <span class="file-name">minishell.c</span>
+                            <span class="file-meta">Source code (System calls & Logic) (.c)</span>
+                        </div>
+                    </a>
                 </div>
             </div>
-            </section>
-    </main>
+
+            <div class="modal-images">
+                <img src="TestCommande2.png" alt="Terminal execution showing pipes" class="screen-img">
+                <p class="img-caption">Screenshot of the shell handling pipes and redirections.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        
+        <div class="modal-body">
+            <div class="modal-text">
+                <span class="tech-tag">Java / OOP / Personal Project</span>
+                <h2>Connect 4 Game Engine</h2>
+                
+                <div class="star-section">
+                    <p><strong>Situation</strong>Personal project developed independently to deepen knowledge of Object-Oriented Programming concepts in Java.</p>
+                    <p><strong>Task</strong>Design a flexible game engine with a strict separation between business logic and the user interface.</p>
+                    <p><strong>Action</strong>Architecture based on polymorphism (Joueur interface). Implementation of a recursive victory algorithm and robust error handling using custom exceptions.</p>
+                    <p><strong>Result</strong>A modular application that allows for easy integration of new features, such as an AI or a Graphical User Interface.</p>
+                </div>
+
+                <div class="file-links">
+                    <a href="Puissance_4_Rapport.pdf" target="_blank" class="file-btn">
+                        <span class="icon">PDF</span>
+                        <div class="file-info">
+                            <span class="file-name">Technical Report (Overleaf)</span>
+                            <span class="file-meta">Architecture analysis and OOP logic</span>
+                        </div>
+                    </a>
+                    
+                    <a href="Puissance 4.zip" download class="file-btn">
+                        <span class="icon" style="background: #e38c00;">ZIP</span>
+                        <div class="file-info">
+                            <span class="file-name">Source_Code.zip</span>
+                            <span class="file-meta">Full project folder (Java Classes & README)</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="modal-images">
+                <img src="Capture Puissance 4.png" alt="Connect 4 Gameplay" class="screen-img">
+                <p class="img-caption">Overview of the menu and victory detection.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="modal3" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        
+        <div class="modal-body">
+            <div class="modal-text">
+                <span class="tech-tag">MATLAB / Digital Communications</span>
+                <h2>Signal Equalization Project</h2>
+                
+                <div class="star-section">
+                    <p><strong>Situation</strong>Academic project at ENSEEIHT centered on digital transmission chains and signal perturbations.</p>
+                    <p><strong>Task</strong>Design a simulation to model channel disturbances (noise and ISI) and implement equalization filters to recover the transmitted data.</p>
+                    <p><strong>Action</strong>Modeled the transmission chain in MATLAB. Implemented Zero-Forcing (ZFE) and Minimum Mean Square Error (MMSE) equalizers. Analyzed performance through Bit Error Rate (BER) curves, constellations, and eye diagrams.</p>
+                    <p><strong>Result</strong>Demonstrated the effectiveness of equalization in reducing ISI. Compared theoretical performance with simulated results, highlighting the noise enhancement trade-off in ZFE.</p>
+                </div>
+
+                <div class="file-links">
+                    <a href="TelecomProjet.pdf" target="_blank" class="file-btn">
+                        <span class="icon">PDF</span>
+                        <div class="file-info">
+                            <span class="file-name">Technical Report</span>
+                            <span class="file-meta">Theoretical study & MATLAB results</span>
+                        </div>
+                    </a>
+
+                    <a href="Projet_Telecom.zip" download class="file-btn">
+                        <span class="icon" style="background: #e38c00;">ZIP</span>
+                        <div class="file-info">
+                            <span class="file-name">Source_Code.zip</span>
+                            <span class="file-meta">Full project folder (Matlab files and screenshots)</span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="modal-images">
+                <img src="DiagrammeOeil.png" alt="BER curves and eye diagram" class="screen-img">
+                <p class="img-caption">BER performance analysis and signal constellations.</p>
+            </div>
+        </div>
+    </div>
+</div>
 
     <footer>
-        <p>&copy; 2025 Matthieu — Engineering ePortfolio for S7 PPP</p>
+        <p>&copy; 2025 Matthieu — Semester 7 PPP ePortfolio</p>
     </footer>
 
+    <script>
+        function openModal(id) { document.getElementById(id).style.display = "flex"; }
+        function closeModal(id) { document.getElementById(id).style.display = "none"; }
+        // Fermer le modal si on clique en dehors de la boîte
+        window.onclick = function(event) {
+            if (event.target.className === 'modal') {
+                event.target.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
