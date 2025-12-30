@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titre de la Page | Matthieu</title>
+    <title>Engineering | Matthieu</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -19,7 +19,8 @@
             <div class="logo">MATTHIEU<span>.</span></div>
         </div>
         <ul>
-            <li><a href="index.html" class="highlight">Home</a></li> <li><a href="engineering.html">Engineering</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="engineering.html" class="highlight">Engineering</a></li>
             <li><a href="mobility.html">Mobility</a></li>
             <li><a href="engagement.html">Engagement</a></li>
             <li><a href="hobbies.html">Interests</a></li>
@@ -63,7 +64,17 @@
                 <button class="btn-detail" onclick="openModal('modal3')">Project Details</button>
             </div>
 
-        </div> </main>
+        </div> 
+        <div class="project-card">
+<div class="project-card pro-card">
+    <div class="card-top">
+        <span class="tech-tag">Professional Experience / INSERM</span>
+        <h3>Software Maintenance Internship</h3>
+        <p>End-of-year internship at INSERM Villejuif. Focused on Java code auditing for database systems and network administration oversight.</p>
+    </div>
+    <button class="btn-detail" onclick="openModal('modal4')">Project Details</button>
+</div>
+    </main>
 
     <div id="modal1" class="modal">
     <div class="modal-content">
@@ -187,6 +198,40 @@
             <div class="modal-images">
                 <img src="DiagrammeOeil.png" alt="BER curves and eye diagram" class="screen-img">
                 <p class="img-caption">BER performance analysis and signal constellations.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="modal4" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal4')">&times;</span>
+        
+        <div class="modal-body">
+            <div class="modal-text">
+                <span class="tech-tag">Professional Experience / INSERM</span>
+                <h2>Software Maintenance & Networking</h2>
+                
+                <div class="star-section">
+                    <p><strong>Situation</strong>First-year engineering internship at INSERM (Villejuif) from June to July 2025.</p>
+                    <p><strong>Task</strong>Ensure the maintenance of a Java application interfacing with a professional database and assist in network administration tasks.</p>
+                    <p><strong>Action</strong>Performed deep code verification and debugging on Java modules to secure database connectivity. Gained hands-on experience in network infrastructure monitoring and system administration protocols.</p>
+                    <p><strong>Result</strong>Successfully improved the stability of the database program and acquired a practical understanding of large-scale professional network management.</p>
+                </div>
+
+                <div class="file-links">
+                    <a href="Stage_Rapport_INSERM.pdf" target="_blank" class="file-btn">
+                        <span class="icon">PDF</span>
+                        <div class="file-info">
+                            <span class="file-name">Internship Report</span>
+                            <span class="file-meta">Summary of missions and technical outcomes</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="modal-images">
+                <img src="Inserm.webp" alt="INSERM Villejuif" class="screen-img">
+                <p class="img-caption">Internship completed at the Villejuif research center.</p>
             </div>
         </div>
     </div>

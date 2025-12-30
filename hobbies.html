@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matthieu | Graduate Engineer Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Interests | Matthieu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
+<header>
     <nav>
         <div class="nav-left">
             <a href="https://github.com/mco9551" target="_blank" class="git-social">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="vertical-align: middle; margin-right: 5px;"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
                 <span>GitHub</span>
             </a>
             <div class="logo">MATTHIEU<span>.</span></div>
@@ -23,24 +23,110 @@
             <li><a href="engineering.html">Engineering</a></li>
             <li><a href="mobility.html">Mobility</a></li>
             <li><a href="engagement.html">Engagement</a></li>
-            <li><a href="hobbies.html">Interests</a></li> <li><a href="ppp.html" class="highlight">PPP</a></li>
+            <li><a href="hobbies.html" class="highlight">Interests</a></li>
+            <li><a href="ppp.html">PPP</a></li>
         </ul>
     </nav>
 </header>
 
-<main class="content-section">
-    <p class="pre-title">Beyond Engineering</p>
-    <h1>Personal Interests</h1>
-    <div class="projects-grid">
+<main class="container">
+    <div class="page-header">
+        <p class="pre-title">Beyond Engineering</p>
+        <h1>Personal Interests</h1>
+        <p class="section-description">How my passions shape my professional mindset.</p>
+    </div>
+
+    <div class="projects-grid" style="margin-top: 60px;">
+        
         <div class="project-card">
-            <span class="tech-tag">Discipline</span>
-            <h3>Sports</h3>
-            <p>[Ex: Rugby / Tennis] - Developed team spirit and resilience under pressure.</p>
+            <div class="card-top">
+                <span class="tech-tag">Creativity & Precision</span>
+                <h3>Music Performance</h3>
+                <p>Practicing music taught me rigor and active listening. Click below to see how this connects to my engineering journey.</p>
+            </div>
+            <img src="MatthieuConcert.jpg" alt="Premier concert" class="screen-img" 
+                style="max-height: 300px; width: 100%; object-fit: contain; background: transparent; border: none;">            
+            <button class="btn-detail" onclick="openModal('modal-music')">More Info</button>
         </div>
+
         <div class="project-card">
-            <span class="tech-tag">Creativity</span>
-            <h3>Music / Arts</h3>
-            <p>Playing [Instrument] for X years, teaching me patience and precision.</p>
+            <div class="card-top">
+                <span class="tech-tag">Team Spirit & Resilience</span>
+                <h3>Sports & Competition</h3>
+                <p>I've been practicing many sports during my teenage years like Basket-ball, Archery and more recently Football and runnning, reinforced my ability to work within a team, set clear goals, and maintain discipline under pressure.</p>
+            </div>
         </div>
     </div>
+
+    <div class="info-card pro-card" style="padding: 40px;">
+        <span class="tech-tag" style="margin-bottom: 15px; display: inline-block;">Cultural Horizons</span>
+        <h2>Literature & Fine Arts</h2>
+        
+        <div class="stats-grid" style="margin-top: 20px; text-align: left;">
+            <div>
+                <h3 style="color: var(--accent-color); font-size: 1.1rem; margin-bottom: 10px;">Literary Exploration</h3>
+                <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.7;">
+                    My reading interests span from classical tragedies to modern masterpieces. Recently, I explored the themes of fate in Sophocles' <em>Oedipus Rex</em>, the linguistic complexity of Nabokov's <em>Lolita</em>, and the deep reflections on memory in Proust's <em>Du côté de chez Swann</em>. These works fuel my analytical thinking and my understanding of the human experience.
+                </p>
+            </div>
+            
+            <div>
+                <h3 style="color: var(--accent-color); font-size: 1.1rem; margin-bottom: 10px;">Visual Arts & Museums</h3>
+                <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.7;">
+                    I enjoy visiting scientific and artistic institutions, such as the Natural History Museum in Toulouse. I am particularly looking forward to my exchange in Rome to study the dramatic mastery of <strong>Caravaggio</strong> and the Italian Renaissance, observing how light and geometry define classical aesthetics.
+                </p>
+            </div>
+        </div>
+
+        <div style="margin-top: 30px; text-align: center;">
+            <img src="Museum.jpeg" alt="Natural Museum of Toulouse" class="screen-img" 
+                style="max-height: 300px; width: 100%; object-fit: contain; background: transparent; border: none;">
+            <p class="img-caption">Museum of Toulouse</p>
+        </div>
+
 </main>
+
+<footer>
+    <p>&copy; 2025 Matthieu — Engineering ePortfolio for S7 PPP</p>
+</footer>
+
+<div id="modal-music" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-music')">&times;</span>
+        <div class="modal-body">
+            <div class="modal-text">
+                <span class="tech-tag">Musician & Organizer</span>
+                <h2>Musical Journey</h2>
+                <div class="star-section">
+                    <p><strong>Background</strong> I have been playing guitar for more than 2 years, focusing on eletrical guitar, but also a bit on acoustic.</p>
+                    <p><strong>Soft Skills</strong> Music developed my patience, my perseverance and my ability to listen closely during collaborative work.</p>
+                    <p><strong>Project Link</strong> This passion drives my commitment to the UCPH Charity Concert.</p>
+                </div>
+            </div>
+            <div class="modal-images">
+                <img src="groupeConcert.jpg" alt="Music details" class="screen-img">
+                <p class="img-caption">My first band.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Script pour gérer le modal
+    function openModal(modalId) {
+        document.getElementById(modalId).style.display = "flex";
+    }
+
+    function closeModal(modalId) {
+        document.getElementById(modalId).style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target.className === 'modal') {
+            event.target.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

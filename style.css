@@ -338,3 +338,35 @@ footer {
     background-color: rgba(255, 255, 255, 0.08);
     border-color: var(--text-secondary);
 }
+
+.pro-card {
+    margin-top: 40px; /* Ajoute un espace supplémentaire au-dessus de cette carte précise */
+}
+/* Styles pour les barres de compétences */
+.skill-bar-container {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.skill-name {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+    color: var(--text-secondary);
+}
+
+.skill-bar {
+    height: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background: var(--accent-color);
+    box-shadow: 0 0 10px var(--accent-color);
+}
