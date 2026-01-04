@@ -229,11 +229,11 @@ nav ul li a:hover, .highlight { color: var(--text-main) !important; }
 
 .screen-img {
     width: 100%;
-    max-height: 250px; /* Limite la hauteur de l'image */
-    object-fit: contain;
+    max-height: 300px; /* Aligné avec ton HTML */
+    object-fit: cover;  /* L'image remplit tout le cadre sans déformation */
     border-radius: 6px;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    background: #000;
+    background: transparent; /* On enlève le noir */
 }
 
 .img-caption {
